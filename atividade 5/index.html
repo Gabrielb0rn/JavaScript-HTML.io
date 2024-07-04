@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Carros</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comparador de Carros</h1>
+        <table>
+            <tr>
+                <th></th>
+                <th>Conforto</th>
+                <th>Economia</th>
+                <th>Design</th>
+                <th>Média</th>
+            </tr>
+            <tr>
+                <td>Carro 1</td>
+                <td><input type="number" id="carro1-conforto" /></td>
+                <td><input type="number" id="carro1-economia" /></td>
+                <td><input type="number" id="carro1-design" /></td>
+                <td><input type="text" id="carro1-media" readonly /></td>
+            </tr>
+            <tr>
+                <td>Carro 2</td>
+                <td><input type="number" id="carro2-conforto" /></td>
+                <td><input type="number" id="carro2-economia" /></td>
+                <td><input type="number" id="carro2-design" /></td>
+                <td><input type="text" id="carro2-media" readonly /></td>
+            </tr>
+            <tr>
+                <td>Carro 3</td>
+                <td><input type="number" id="carro3-conforto" /></td>
+                <td><input type="number" id="carro3-economia" /></td>
+                <td><input type="number" id="carro3-design" /></td>
+                <td><input type="text" id="carro3-media" readonly /></td>
+            </tr>
+        </table>
+        <button onclick="comparar()">Comparar</button>
+        <h2>Melhor Carro: <span id="melhor-carro"></span></h2>
+    </div>
+    <script src="assets/scripts.js"></script>
+</body>
+</html>

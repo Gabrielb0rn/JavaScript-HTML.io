@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria da Abgail</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Pizzaria da Abgail</h1>
+    <p>Descontos de 15% em valores acima de R$50</p>
+    <p>Escolha sua pizza</p>
+    <select id="pizza">
+        <option value="lombinho">Lombinho - R$ 40,00</option>
+        <option value="calabresa">Calabresa - R$ 35,00</option>
+        <option value="portuguesa">Portuguesa - R$ 45,00</option>
+        <option value="camarao">Camarão - R$ 60,00</option>
+    </select>
+    <button onclick="comprar()">COMPRAR</button>
+    <div class="output">
+        <input type="text" id="valor" placeholder="Valor" readonly>
+        <input type="text" id="valorFinal" placeholder="Valor Final" readonly>
+    </div>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>

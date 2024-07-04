@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MINI CALCULADORA</h1>
+
+    <label for="valor1">Valor 1</label>
+    <input type="number" id="valor1" name="valor1"><br>
+
+    <label for="valor2">Valor 2</label>
+    <input type="number" id="valor2" name="valor2"><br>
+
+    <div class="buttons">
+        <button onclick="calcular('soma')">Soma</button>
+        <button onclick="calcular('subtracao')">Subtração</button>
+        <button onclick="calcular('multiplicacao')">Multiplicação</button>
+        <button onclick="calcular('divisao')">Divisão</button>
+    </div>
+    
+    <div id="resultadoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

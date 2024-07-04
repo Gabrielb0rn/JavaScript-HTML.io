@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Quiz Maneiro</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Mini Quiz Maneiro</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <label for="pergunta-x">Pergunta X, balblalbalblablaba</label>
+                <select id="pergunta-x" name="pergunta-x">
+                    <option value="1">Resposta 1</option>
+                    <option value="2">Resposta 2</option>
+                    <option value="3">Resposta 3</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="pergunta-y">Pergunta Y, balblalbalblablaba</label>
+                <select id="pergunta-y" name="pergunta-y">
+                    <option value="1">Resposta 1</option>
+                    <option value="2">Resposta 2</option>
+                    <option value="3">Resposta 3</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="pergunta-z">Pergunta Z, balblalbalblablaba</label>
+                <select id="pergunta-z" name="pergunta-z">
+                    <option value="1">Resposta 1</option>
+                    <option value="2">Resposta 2</option>
+                    <option value="3">Resposta 3</option>
+                </select>
+            </div>
+            <div class="output-option">
+                <label><input type="radio" name="output" value="alert" checked> Alert</label>
+                <label><input type="radio" name="output" value="input"> Input</label>
+                <label><input type="radio" name="output" value="div"> DIV</label>
+            </div>
+            <div class="show-result">
+                <label><input type="checkbox" id="show-result"> Quero ver meu resultado</label>
+            </div>
+            <button type="button" onclick="mostrarResultado()">Resultado</button>
+            <div id="resultado" class="hidden">
+                <input type="text" id="resultado-input" readonly>
+                <div id="resultado-div"></div>
+            </div>
+        </form>
+    </div>
+    <script src="assets/scripts.js"></script>
+</body>
+</html>

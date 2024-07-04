@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Par ou Ímpar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #FF7F00;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        input[type="number"], input[type="text"] {
+            width: 100px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+        }
+
+        button {
+            background-color: #FF7F00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #e66a00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Par ou Ímpar</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Número 1</td>
+                <td><input type="number" id="numero1"></td>
+                <td><input type="text" id="resultado1" readonly></td>
+            </tr>
+            <tr>
+                <td>Número 2</td>
+                <td><input type="number" id="numero2"></td>
+                <td><input type="text" id="resultado2" readonly></td>
+            </tr>
+            <tr>
+                <td>Número 3</td>
+                <td><input type="number" id="numero3"></td>
+                <td><input type="text" id="resultado3" readonly></td>
+            </tr>
+            <tr>
+                <td>Número 4</td>
+                <td><input type="number" id="numero4"></td>
+                <td><input type="text" id="resultado4" readonly></td>
+            </tr>
+            <tr>
+                <td>Número 5</td>
+                <td><input type="number" id="numero5"></td>
+                <td><input type="text" id="resultado5" readonly></td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="verificar()">Verificar</button>
+
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria da Abgail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #a5d635;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #000;
+        }
+
+        p {
+            color: #000;
+            font-size: 18px;
+        }
+
+        select {
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .output {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 100px;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pizzaria da Abgail</h1>
+    <p>Descontos de 15% em valores acima de R$50</p>
+    <p>Escolha sua pizza</p>
+    <select id="pizza">
+        <option value="lombinho">Lombinho - R$ 40,00</option>
+        <option value="calabresa">Calabresa - R$ 35,00</option>
+        <option value="portuguesa">Portuguesa - R$ 45,00</option>
+        <option value="camarao">Camarão - R$ 60,00</option>
+    </select>
+    <button onclick="comprar()">COMPRAR</button>
+    <div class="output">
+        <input type="text" id="valor" placeholder="Valor" readonly>
+        <input type="text" id="valorFinal" placeholder="Valor Final" readonly>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
